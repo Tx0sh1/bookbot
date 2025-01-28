@@ -11,13 +11,14 @@ def count_characters(letters):
     return char
 
 letters = main()
-char_count = count_characters(letters)  
-
-print(char_count)
+char_count = count_characters(letters)
 
 def formatted_output():
-    for char in char_count:
-        print(char)
+    
+    print("--- Begin report of books/frankenstein.txt --- \n")
+    for letter, count in char_count.items():
+        print(f"{letter} appears {count} times")
+    print("--- End report ---")
         
 formatted_output()
                
